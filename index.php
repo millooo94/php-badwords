@@ -43,7 +43,7 @@
     ?>
     <div class="row justify-content-center my-5">
         <div class="col-auto">
-            <h1 class="text-uppercase text-danger">
+            <h1 class="text-uppercase text-danger fw-bold">
                 <?php echo str_ireplace($badword,'***', $title)?>
             </h1>
         </div>
@@ -58,7 +58,7 @@
     </div>
     <div class="row">
         <div class="col-auto mb-5">
-            <span>LENGTH:</span>
+            <span class="fw-bold">LENGTH:</span>
             <?php echo strlen(str_ireplace($badword,'***', $text)) + strlen(str_ireplace($badword,'***', $title)) ?>
         </div>
     </div>
